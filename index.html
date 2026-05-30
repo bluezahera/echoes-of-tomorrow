@@ -433,10 +433,6 @@ function parseChapterText(text){
         html+='<p class="em-sig-p" style="font-size:1.08em;font-weight:700;margin-top:1.2em;text-align:right">'+processInline(t)+'</p>';
         return;
       }
-      if(pageIdx===0&&paraIdx===0){
-        html+='<p class="op">'+processInline(t)+'</p>';
-        return;
-      }
       html+='<p>'+processInline(t)+'</p>';
     });
     pages.push(html);
